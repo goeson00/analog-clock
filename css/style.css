@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.clock-container {
+    display: flex;
+    margin: auto;
+    height: 300px;
+    width: 300px;
+}
+
+.clock-container::before {
+    background-color: #000;
+    border-radius: 50%;
+    content: "";
+    height: 20px;
+    margin: auto;
+    width: 20px;
+}
+
+.pointer {
+    background-color: #000;
+    bottom: 50%;
+    margin: 0 auto;
+    position: absolute;
+    transform-origin: bottom center;
+}
+
+.pointer-hour {
+    height: 50px;
+    left: calc(50% - 3px);
+    width: 6px;
+}
+.pointer-minute {
+    height: 90px;
+    left: calc(50% - 2px);
+    width: 4px;
+}
+.pointer-second {
+    height: 90px;
+    left: calc(50% - 1px);
+    width: 2px;
+    /* transition: transform 1s ease-in-out; */
+}
